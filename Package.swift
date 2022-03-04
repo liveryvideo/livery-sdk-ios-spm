@@ -33,6 +33,11 @@ let package = Package(
             name: "AWSiOSSDKV2",
             url: "https://github.com/aws-amplify/aws-sdk-ios-spm",
             from: "2.26.0"
+        ),
+        .package(
+            name: "Kronos",
+            url: "https://github.com/MobileNativeFoundation/Kronos",
+            from: "4.2.1"
         )
     ],
     targets: [

@@ -15,7 +15,7 @@ func createTarget() -> Target {
                         path: "\(localPath)Livery.xcframework") :
     Target.binaryTarget(name: "Livery",
                         url: "\(hostingUrl)Livery-\(latestVersion).zip",
-                        checksum: "")
+                        checksum: "ec0b4c2bc8c9bc62a6548183fb1c9e1268de07eb0c5442a84148795a6a4ca956")
 }
 
 let target = createTarget()

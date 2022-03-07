@@ -15,7 +15,7 @@ func createTarget() -> Target {
                         path: "\(localPath)Livery.xcframework") :
     Target.binaryTarget(name: "Livery",
                         url: "\(hostingUrl)Livery-\(latestVersion).zip",
-                        checksum: "ec0b4c2bc8c9bc62a6548183fb1c9e1268de07eb0c5442a84148795a6a4ca956")
+                        checksum: "29d9871dc9ab96852e509df6c59093ee4d8e83f82e7280b39fac96345a25550d")
 }
 
 let target = createTarget()
@@ -33,11 +33,6 @@ let package = Package(
             name: "AWSiOSSDKV2",
             url: "https://github.com/aws-amplify/aws-sdk-ios-spm",
             from: "2.26.0"
-        ),
-        .package(
-            name: "Kronos",
-            url: "https://github.com/MobileNativeFoundation/Kronos",
-            from: "4.2.1"
         )
     ],
     targets: [

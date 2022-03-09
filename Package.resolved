@@ -9,15 +9,6 @@
           "revision": "e896a99482174275c1d8159828ca357ff7dbbe06",
           "version": "2.26.3"
         }
-      },
-      {
-        "package": "Kronos",
-        "repositoryURL": "https://github.com/MobileNativeFoundation/Kronos",
-        "state": {
-          "branch": null,
-          "revision": "b7f54653a8bb503f42b59ab3160eb11f333b9d3f",
-          "version": "4.2.1"
-        }
       }
     ]
   },

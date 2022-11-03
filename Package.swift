@@ -2,7 +2,7 @@
 import PackageDescription
 
 // Current stable version of the Livery iOS SDK
-let latestVersion = "2.0.0-beta.2"
+let latestVersion = "2.0.0"
 
 // Hosting url where the release artifacts are hosted.
 let hostingUrl = "https://sdk-ios-binaries.liveryvideo.com/xcframework/"
@@ -15,7 +15,7 @@ func createTarget() -> Target {
                         path: "\(localPath)Livery.xcframework") :
     Target.binaryTarget(name: "Livery",
                         url: "\(hostingUrl)Livery-\(latestVersion).zip",
-                        checksum: "9dc494c8c2379b1b6c0d9bd97c0c241df13c47885bab0b945d3c2755a5c0ea6d")
+                        checksum: "cbafe9eecbf1b0533b1a34c5247e494effd64a831dc75a091b3be549638242b7")
 }
 
 let target = createTarget()
@@ -33,11 +33,6 @@ let package = Package(
             name: "AWSiOSSDKV2",
             url: "https://github.com/aws-amplify/aws-sdk-ios-spm",
             from: "2.27.9"
-        ),
-        .package(
-            name: "Lottie",
-            url: "https://github.com/airbnb/lottie-ios.git",
-            from: "3.4"
         )
     ],
     targets: [
@@ -47,8 +42,7 @@ let package = Package(
             dependencies: [
                 "Livery",
                 .product(name: "AWSCore", package: "AWSiOSSDKV2"),
-                .product(name: "AWSPinpoint", package: "AWSiOSSDKV2"),
-                .product(name: "Lottie", package: "Lottie")
+                .product(name: "AWSPinpoint", package: "AWSiOSSDKV2")
             ],
             path: "LiveryTargetSource"
         )

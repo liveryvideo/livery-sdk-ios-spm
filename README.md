@@ -7,12 +7,12 @@ request credentials from Livery, then place them in your `~/.netrc` as
 follows: (create if necessary)
 
 ```
-machine sdk-ios-binaries.liveryvideo.com
+machine sdk-ios-binaries.livery.live
   login YOUR_USERNAME
   password YOUR_PASSWORD
 ```
 
-## Installation 
+## Installation
 
 Swift Package Manager is distributed with Xcode. To add the Livery SDK to your iOS project, do as follows:
 1. Open your project in Xcode and select File > Add Packages

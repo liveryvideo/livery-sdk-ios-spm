@@ -17,4 +17,4 @@ machine sdk-ios-binaries.liveryvideo.com
 Swift Package Manager is distributed with Xcode. To add the Livery SDK to your iOS project, do as follows:
 1. Open your project in Xcode and select File > Add Packages
 2. Enter the URL for this repo (https://github.com/liveryvideo/livery-sdk-ios-spm) into the search bar and click "Add Package"
-3. Then on the Dependency Rule menu select the "Exact Version" - `1.3.0` or "Branch" - `main` to have the latest release
+3. Then on the Dependency Rule menu select the "Exact Version" - `2.0.0` or "Branch" - `main` to have the latest release

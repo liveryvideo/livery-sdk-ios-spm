@@ -2,7 +2,7 @@
 import PackageDescription
 
 // Current stable version of the Livery iOS SDK
-let latestVersion = "2.0.5"
+let latestVersion = "2.1.0-beta.3"
 
 // Hosting url where the release artifacts are hosted.
 let hostingUrl = "https://sdk-ios-binaries.liveryvideo.com/xcframework/"
@@ -15,7 +15,7 @@ func createTarget() -> Target {
                         path: "\(localPath)Livery.xcframework") :
     Target.binaryTarget(name: "Livery",
                         url: "\(hostingUrl)Livery-\(latestVersion).zip",
-                        checksum: "d85764410e8d0f1f5afc37de03f97f7aaeb394a1c83f5f9d629db2583c4c8441")
+                        checksum: "8b9c3d88f9b4336ea47d130760e60f8f9ac59e3474780e1efd61d0d72cbeb686")
 }
 
 let target = createTarget()

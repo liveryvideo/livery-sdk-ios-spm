@@ -13,7 +13,7 @@ let package = Package(
         .package(
             name: "AWSiOSSDKV2",
             url: "https://github.com/aws-amplify/aws-sdk-ios-spm",
-            from: "2.30"
+            from: "2.30.0"
         )
     ],
     targets: [

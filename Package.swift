@@ -1,25 +1,6 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-// Current stable version of the Livery iOS SDK
-let latestVersion = "2.0.7"
-
-// Hosting url where the release artifacts are hosted.
-let hostingUrl = "https://sdk-ios-binaries.livery.live/xcframework/"
-let localPath = "XCF/"
-let localPathEnabled = false
-
-func createTarget() -> Target {
-    localPathEnabled ?
-    Target.binaryTarget(name: "LiveryFramework",
-                        path: "\(localPath)Livery.xcframework") :
-    Target.binaryTarget(name: "Livery",
-                        url: "\(hostingUrl)Livery-\(latestVersion).zip",
-                        checksum: "4ba63f874f77e96ae6e9097fc9b75cf3931108412fdd07175bec8d741b63ff7c")
-}
-
-let target = createTarget()
-
 let package = Package(
     name: "Livery",
     platforms: [
@@ -32,11 +13,15 @@ let package = Package(
         .package(
             name: "AWSiOSSDKV2",
             url: "https://github.com/aws-amplify/aws-sdk-ios-spm",
-            from: "2.30.4"
+            from: "2.30.0"
         )
     ],
     targets: [
-        target,
+        .binaryTarget(
+            name: "Livery",
+            url: "https://sdk-ios-binaries.livery.live/xcframework/Livery-2.1.0.zip",
+            checksum: "144dc1fa7a8111c30d5e1f8de3de70cc080e2db7602171a9f237e9c9175c115b"
+        ),
         .target(
             name: "LiverySDKWrapper",
             dependencies: [

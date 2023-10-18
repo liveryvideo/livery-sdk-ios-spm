@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "Livery",
     platforms: [
-        .iOS(.v12)
+        .iOS(.v14)
     ],
     products: [
         .library(name: "Livery", targets: ["LiverySDKWrapper"])
@@ -13,14 +13,14 @@ let package = Package(
         .package(
             name: "AWSiOSSDKV2",
             url: "https://github.com/aws-amplify/aws-sdk-ios-spm",
-            from: "2.30.0"
+            from: "2.33.3"
         )
     ],
     targets: [
         .binaryTarget(
             name: "Livery",
-            url: "https://sdk-ios-binaries.liveryvideo.com/xcframework/Livery-2.1.0.zip",
-            checksum: "144dc1fa7a8111c30d5e1f8de3de70cc080e2db7602171a9f237e9c9175c115b"
+            url: "https://sdk-ios-binaries.liveryvideo.com/releases/Livery-3.0.0-alpha.1.zip",
+            checksum: "9edcd2b97a07b9bdf8950ec5e8c934291c6868ad6d664d2febc635500db0351a"
         ),
         .target(
             name: "LiverySDKWrapper",

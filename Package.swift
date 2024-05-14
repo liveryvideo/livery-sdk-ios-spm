@@ -19,8 +19,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "Livery",
-            url: "https://sdk-ios-binaries.liveryvideo.com/xcframework/Livery-3.0.0.zip",
-            checksum: "c422be6f047468f394a0b55ac569dbc7c80bc14b632623d859243db50962a447"
+            url: "https://sdk-ios-binaries.liveryvideo.com/xcframework/Livery-3.1.0-beta.1.zip",
+            checksum: "8fa201777b97cb3332e752c65d179ce81be8e7bb3a9aba7322032f0e15a00f7f"
         ),
         .target(
             name: "LiverySDKWrapper",

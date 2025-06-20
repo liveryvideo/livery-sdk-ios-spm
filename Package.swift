@@ -13,14 +13,14 @@ let package = Package(
         .package(
             name: "AWSiOSSDKV2",
             url: "https://github.com/aws-amplify/aws-sdk-ios-spm",
-            from: "2.40.1"
+            from: "2.41.0"
         )
     ],
     targets: [
         .binaryTarget(
             name: "Livery",
-            url: "https://sdk-ios-binaries.livery.live/2.1.4/Livery-spm-2.1.4.zip",
-            checksum: "a41fc919c153d8bcb54b08a29c0f0f37901d6fda717262d03ca40d795ba4a31c"
+            url: "https://sdk-ios-binaries.livery.live/2.1.5-beta.1/Livery-spm-2.1.5-beta.1.zip",
+            checksum: "d24ea3b494da82bd5949bb51513aa3711987654dc36be042818bacafbdfbf765"
         ),
         .target(
             name: "LiverySDKWrapper",

@@ -12,8 +12,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "Livery",
-            url: "https://sdk-ios-binaries.livery.live/3.3.5/Livery-spm-3.3.5.zip",
-            checksum: "4318d2ffaa696cc415b453db0040ba2456b20d8310aba65d53a8fd8beeaa983e"
+            url: "https://sdk-ios-binaries.livery.live/3.3.6+37f9a76/Livery-spm-3.3.6+37f9a76.zip",
+            checksum: "5e8c1b6bbe19d4b5fa22059d7130e849eaf0f453a0ce486d1b8d455afb55daf0"
         )
     ],
     swiftLanguageVersions: [.v5]
